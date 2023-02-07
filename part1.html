@@ -60,13 +60,11 @@
         platforms.create(50, 250, 'ground');
         platforms.create(750, 220, 'ground');
 
-        // Create player and apply physics/collision
         player = this.physics.add.sprite(100, 450, 'dude');
 
         player.setBounce(0.2);
         player.setCollideWorldBounds(true);
 
-        // Player animation on input
         this.anims.create({
             key: 'left',
             frames: this.anims.generateFrameNumbers('dude', { start: 0, end: 3 }),
